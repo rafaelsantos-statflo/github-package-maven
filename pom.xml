@@ -6,7 +6,7 @@
 
   <groupId>github-package</groupId>
   <artifactId>maven</artifactId>
-  <version>1.0-SNAPSHOT</version>
+  <version>3.0</version>
 
   <name>maven</name>
   <!-- FIXME change it to the project's website -->
@@ -26,6 +26,16 @@
       <scope>test</scope>
     </dependency>
   </dependencies>
+
+
+  <distributionManagement>
+   <repository>
+     <id>github</id>
+     <name>GitHub rafaelsantos-statflo Apache Maven Packages</name>
+     <url>https://maven.pkg.github.com/rafaelsantos-statflo/github-package-maven</url>
+   </repository>
+  </distributionManagement>
+
 
   <build>
     <pluginManagement><!-- lock down plugins versions to avoid using Maven defaults (may be moved to parent pom) -->
